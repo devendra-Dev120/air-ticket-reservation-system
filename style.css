@@ -1,0 +1,83 @@
+.time-box {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 5px solid #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+.time-box select {
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+/* Full page background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    background: url("/air_ticket/assets/flight.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card container */
+.container {
+      background: rgba(255, 255, 255, 0.15);   /* transparent */
+  backdrop-filter: blur(05px);            /* glass blur */
+    padding: 90px 100px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Heading */
+.container h1 {
+    margin-bottom: 25px;
+    font-size: 46px;
+    color: #ffffff;
+}
+
+/* Buttons */
+.btn {
+    text-decoration: none;
+    padding: 42px 55px;
+    margin: 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+/* Admin button */
+.admin-btn {
+    background: #e63946;
+    padding: 20px 25px;
+    font-size: 30px;
+}
+
+.admin-btn:hover {
+    background: #c1121f;
+}
+
+/* User button */
+.user-btn {
+    background: #2a9d8f;
+    padding: 20px 25px;
+    font-size: 30px;
+}
+
+.user-btn:hover {
+    background: #1b7f72;
+}

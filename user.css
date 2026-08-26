@@ -1,0 +1,466 @@
+/* ===== GENERAL USER STYLE ===== */
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  min-height:100vh;
+
+  /* Runway sunset background */
+  background: url("/air_ticket/assets/bg-runway1.jpg") center/cover fixed no-repeat;
+  position: relative;
+
+  /* ADD THIS FOR CENTER */
+  display:flex;
+  justify-content:center;   /* horizontal center */
+  align-items:center;       /* vertical center */
+}
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(8,12,20,.78), rgba(15,23,42,.55));
+  z-index: -1;
+}
+/* ===== CONTAINER ===== */
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+      background: rgba(255, 255, 255, 0.15);   /* transparent */
+  backdrop-filter: blur(05px);            /* glass blur */
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.container1{
+    width:90%;
+    max-width:450px;
+    margin:40px auto;
+      background: rgba(255, 255, 255, 0.15);   /* transparent */
+  backdrop-filter: blur(05px);            /* glass blur */
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+.container2{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+      background: rgba(255, 255, 255, 0.15);   /* transparent */
+  backdrop-filter: blur(05px);            /* glass blur */
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+/* Fix container width */
+.search-container{
+    width:fit-content;
+    max-width:1100px;
+    margin:100px auto;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(05px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-radius:16px;
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,0.25);
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+
+    text-align:center;
+}
+/* Prevent table from expanding container */
+.table-wrapper{
+    width:100%;
+    overflow-x: auto;
+}
+/* ===== HEADINGS ===== */
+
+h1,h2,h3{
+    text-align:center;
+    color:#ffffff;
+}
+
+/* ===== FORMS ===== */
+
+form{
+    margin-top:20px;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+input:focus, select:focus{
+    outline:none;
+    border:1px solid #2c5364;
+}
+
+/* ===== BUTTONS ===== */
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:16px;
+    background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  box-shadow: 0 10px 25px rgba(37,99,235,0.5);
+    cursor:pointer;
+    font-size:20px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#203a43;
+}
+
+/* ===== TABLE DESIGN ===== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+}
+
+table th{
+    background:#2c5364;
+    color:white;
+    padding:10px;
+}
+
+table td{
+    padding:8px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+    background:#f2f2f2;
+}
+
+/* ===== STATUS COLORS ===== */
+
+.status-running{
+    color:green;
+    font-weight:bold;
+}
+
+.status-delayed{
+    color:orange;
+    font-weight:bold;
+}
+
+.status-cancelled{
+    color:red;
+    font-weight:bold;
+}
+
+/* ===== SUCCESS MESSAGE ===== */
+
+.success{
+    color:green;
+    text-align:center;
+    font-weight:bold;
+}
+
+.error{
+    color:red;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* ===== NAVIGATION LINKS ===== */
+
+a{
+    text-decoration:none;
+    color:#2c5364;
+    font-weight:500;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* ===== SEARCH BOX STYLE ===== */
+
+.search-box{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.search-box input{
+    flex:1;
+}
+
+/* ===== BOOKING SUMMARY BOX ===== */
+
+.summary-box{
+    background:#f8f9fa;
+    padding:15px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+/* ===== CENTER BUTTON ===== */
+
+.center-btn{
+    text-align:center;
+    margin-top:20px;
+}
+.login-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;   /* space between items */
+    font-size: 14px;
+}
+
+.login-links a {
+    text-decoration: none;
+    color: #1f3c88;
+    font-weight: 500;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.login-links span {
+    color: #888;
+}
+.otp-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.otp-btn {
+    width: 120px;
+}
+.table-wrap{
+  width: 100%;
+  max-width: 1100px;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.data-table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.data-table th{
+  background: #0f172a;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.data-table td{
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.data-table tr:nth-child(even){
+  background: #f8fafc;
+}
+/* ===== Professional Search Card (User Panel) ===== */
+.search-card{
+  width: min(920px, 92%);
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 22px;
+  box-shadow: 0 22px 55px rgba(0,0,0,0.35);
+  padding: 28px 34px;
+  backdrop-filter: blur(10px);
+}
+
+/* Title */
+.search-card h2,
+.search-card .title{
+  text-align:center;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 18px 0;
+  color:#0f172a;
+  letter-spacing: 0.2px;
+}
+
+/* Form fields */
+.search-card input,
+.search-card select{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background: rgba(255,255,255,0.95);
+  font-size: 15px;
+  outline: none;
+  transition: 0.15s ease;
+  margin: 10px 0;
+}
+
+.search-card input:focus,
+.search-card select:focus{
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.18);
+}
+
+/* Buttons row */
+.search-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top: 10px;
+}
+
+/* Professional button */
+.btn-pro{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 11px 18px;
+  border-radius: 999px;
+  border: none;
+  cursor:pointer;
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration:none;
+  transition: 0.18s ease;
+}
+
+/* Primary Search */
+.btn-pro.primary{
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color:#fff;
+  box-shadow: 0 10px 22px rgba(37,99,235,0.35);
+}
+.btn-pro.primary:hover{ transform: translateY(-1px); filter: brightness(0.98); }
+
+/* Secondary Booking History */
+.btn-pro.secondary{
+  background: rgba(15,23,42,0.08);
+  color:#0f172a;
+  border: 1px solid rgba(15,23,42,0.15);
+}
+.btn-pro.secondary:hover{ transform: translateY(-1px); background: rgba(15,23,42,0.12); }
+
+/* Links */
+.search-links{
+  margin-top: 14px;
+  display:flex;
+  gap:14px;
+  justify-content:flex-start;
+}
+.search-links a{
+  color:#0b3fd6;
+  font-weight: 700;
+  text-decoration:none;
+}
+.search-links a:hover{ text-decoration:underline; }
+
+/* Responsive */
+@media(max-width:600px){
+  .search-card{ padding: 20px; border-radius: 18px; }
+  .search-card h2,.search-card .title{ font-size: 22px; }
+}
+/* ===== Search Layout Alignment ===== */
+
+.search-center-row{
+  text-align:center;
+  margin-top:15px;
+}
+
+.search-bottom-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:20px;
+}
+
+.search-bottom-row .left{
+  text-align:left;
+}
+
+.search-bottom-row .right{
+  text-align:right;
+}
+
+.logout-link{
+  color:#0b3fd6;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.logout-link:hover{
+  text-decoration:underline;
+}
+/* ===== Glow Effect for Register Link ===== */
+.glow-link{
+  color: #60a5fa;
+  font-weight: 700;
+  font-size:18px;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.glow-link{
+  color: #ffffff;
+  text-shadow:
+    0 0 6px #60a5fa,
+    0 0 04px #ffffff,
+    0 0 14px #0084ff;
+}
+.suggest-box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.suggestions{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 999;
+    display: none;
+}
+
+.suggestion-item{
+    padding: 12px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #111827;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:last-child{
+    border-bottom: none;
+}
+
+.suggestion-item:hover{
+    background: #f3f4f6;
+}
